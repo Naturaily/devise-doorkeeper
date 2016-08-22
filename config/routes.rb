@@ -7,5 +7,9 @@ Rails.application.routes.draw do
 
   resources :items
 
+  namespace :api do
+    resources :items
+  end
+
   root to: 'items#index'
 end
